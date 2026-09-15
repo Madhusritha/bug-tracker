@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Login button not working",
+    "description": "Users cannot log in after entering valid credentials.",
+    "priority": "High",
+    "status": "To Do",
+    "assignee": "Abhitha"
+  },
+  {
+    "id": 2,
+    "title": "Dashboard loading slowly",
+    "description": "Dashboard takes more than 5 seconds to load.",
+    "priority": "Medium",
+    "status": "In Progress",
+    "assignee": "Rahul"
+  },
+  {
+    "id": 3,
+    "title": "Fix mobile layout",
+    "description": "Some buttons are overlapping on mobile screens.",
+    "priority": "Low",
+    "status": "Done",
+    "assignee": "Priya"
+  }
+]
