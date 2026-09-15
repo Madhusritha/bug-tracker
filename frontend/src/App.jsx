@@ -408,7 +408,7 @@ const editTicket = async (ticket) => {
           No tickets
         </p>
       ) : (
-     filteredTickets.map((ticket) => (
+    tickets.map((ticket) => (
           <TicketCard key={ticket.id} ticket={ticket} />
         ))
       )}
