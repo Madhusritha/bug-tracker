@@ -30,7 +30,7 @@ const initialTickets = [
 function App() {
   const [tickets, setTickets] = useState(initialTickets);
   useEffect(() => {
-  fetch("http://localhost:5000/api/tickets")
+  fetch("https://bug-tracker-doha.onrender.com/api/tickets")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Failed to fetch tickets");
@@ -69,7 +69,7 @@ function App() {
       ...form,
     };
 
-   const response = await fetch("http://localhost:5000/api/tickets", {
+   const response = await fetch("https://bug-tracker-doha.onrender.com/api/tickets", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
@@ -98,7 +98,7 @@ setTickets([savedTicket, ...tickets]);
 
  const deleteTicket = async (id) => {
   try {
-    const response = await fetch(`http://localhost:5000/api/tickets/${id}`, {
+    const response = await fetch(`https://bug-tracker-doha.onrender.com/api/tickets/${id}`, {
       method: "DELETE",
     });
 
@@ -138,7 +138,7 @@ const editTicket = async (ticket) => {
 
   try {
     const response = await fetch(
-      `http://localhost:5000/api/tickets/${ticket.id}`,
+      `https://bug-tracker-doha.onrender.com/api/tickets/${ticket.id}`,
       {
         method: "PUT",
         headers: {
@@ -174,7 +174,7 @@ const editTicket = async (ticket) => {
 
   const moveTicket = async (id, newStatus) => {
   try {
-    const response = await fetch(`http://localhost:5000/api/tickets/${id}`, {
+    const response = await fetch(`https://bug-tracker-doha.onrender.com/api/tickets/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
